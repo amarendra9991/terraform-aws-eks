@@ -30,6 +30,9 @@ First we need to create free teir aws account. Link to singup - https://portal.a
   
 # Install the terraform
   https://www.vasos-koupparis.com/terraform-getting-started-install/
+  
+# Terraform analysis with Checkov
+  https://github.com/bridgecrewio/checkov
 
 # Before starting with Terraform we should have configured our credentials in the AWS folder in our system as shown below.
 
