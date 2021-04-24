@@ -52,9 +52,9 @@ Default output format [json]:
 
 1). Go to eks_cluster_using_terraform/modules/eks/providers.tf folder, replace the Access_key and secret_key in providers.tf file with new user access details. Also please make sure to pass any SSH keypair name to the variables.tf file.
 
-2). Run #terraform init 
-        #terraform plan 
-        #terraform apply
+2). Run #terraform init -backend-config=demo.conf -input=false
+        #terraform plan  -out=tfplan
+        #terraform apply -tfplan -auto-approve -input=false
 
 3).Wait while the EKS cluster is created.
 4) Run below command to update kube-config, Please make sure you have the "aws configure" command setup prior to running this step.
